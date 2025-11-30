@@ -1,0 +1,135 @@
+%%=============================================================================
+%% 适用于西南大学硕士毕业论文, \add{参考'西南大学专业学位硕士论文规范与评价标准-202407.doc'、'D5.硕士学位论文封面格式.doc'修改,} 本模板基于厦门大学硕士研究生论文模板修改, 项目主页:https://github.com/zoam/xmu-thesis-grd
+%% modified by DouBao and Zhang Lin
+%% Version: 1.0
+%% Last update: 2025年11月26日
+%%==============================================================================
+
+% 默认单面打印 oneside 、硕士论文模板 master
+
+\documentclass[twoside,master]{swu-thesis-grd}
+\makeglossaries
+% 模板选项使用说明
+% 硕士论文：master
+% 博士论文：doctor
+% 直接使用学校 doc 文档转换的 pdf 页面：pdf
+% 日常编辑（单面打印模式）：oneside
+% 查重去除空白页（单面打印模式）：oneside(注意: oneside模式下奇偶页页眉将一致)
+% 形式审查和打印稿（双面打印模式）：twoside
+% 编译说明：对于中文排版，请使用 XeLaTeX 编译器；
+
+% 导入缩写词表
+\input{chapters/acronym_list}
+
+% 导入符号表
+% \input{chapters/symbol_list}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 封面及其他固定内容的页面
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 在这里设置论文信息
+
+\title{资产重组：一个资不抵债国有企业的最佳选择(25字以内)} % 中文标题
+\entitle{Asset Restructuring: The Best Choice for a State-owned Enterprise with Insolvency} % 英文标题
+\schoolserialnumber{10635} % 学校单位代码
+
+\author{张三} % 作者姓名
+\enauthor{San Zhang} % 姓名英文
+\studentnumber{112024314000***} % 学号
+
+\advisor{李四教授} % 导师
+\enadvisor{Professor Si Li} % 导师英文
+
+\major{数学} % 专业
+\enmajor{Math} % 专业英文
+\researchdirection{应用动力系统} % 方向
+\enresearchdirection{Applied Dynamics Systems} % 方向英文
+
+\submitdate{2025年11月} % 提交论文日期
+\defenddate{2025年12月} % 论文答辩日期
+\degreegrantor{西南大学} % 学位授予单位
+
+
+\printdate{2026年5月} % 中文封面下方日期
+\submitdateen{May/2026} % 英文封面下方日期
+
+% 封面
+\makecover
+
+\makecoveren % 生成英文封面
+
+
+% 学位论文独创性声明和版权使用授权书
+% 西南大学的这个部分已有word版本, 编写一个新的tex版本需要占用cls大量空间,这里直接使用'学位论文独创性声明和版权使用授权书.cos'转换的pdf,需要修改可以替换文件'pdf_files/originality_statement.pdf'
+
+\makecopyrightstatement
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 前置部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+% 中英文目录
+\tableofcontents
+%\entableofcontents 西南大学'西南大学专业学位硕士论文规范与评价标准-202407.doc'中没有要求英文目录
+
+% 中英文摘要
+\input{chapters/abstract}
+
+
+
+% 缩略词表
+%\makeacronymlist
+
+% 符号表
+\makesymbollist
+%
+%% 图索引
+%\makefigurelist
+%
+%% 表索引
+%\maketablelist
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文主体部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+\input{chapters/chapter1}
+%\include{chapters/chapter2}
+%\include{chapters/chapter3}
+
+% \adjustafterskip %调整章节与正文的间距。临时解决方案。总结、参考文献、附录、致谢和发表的论文都会受到影响。
+\input{chapters/conclusion}
+
+% 参考文献
+\bibliography{reference/chapter1}
+
+% 附录（章节编号重新计算，使用字母进行编号）
+\appendix
+\setappendixnumberformat
+
+\input{chapters/appendix1}
+\input{chapters/appendix2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 后置部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+% 学位论文答辩委员会名单
+% 如果需要调节这部分的内容，请修改chapters/name_list
+%\makenamelist
+
+% 致谢
+\input{chapters/acknowledgements}
+
+% 发表文章目录
+\input{chapters/publications}
+\cleardoublepage
+
+\end{document}
