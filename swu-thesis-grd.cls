@@ -6,7 +6,7 @@
 %%   1. 西南大学专业学位硕士论文规范与评价标准-202407.doc
 %%   2. D5.硕士学位论文封面格式.doc
 %% 基底项目: 厦门大学硕士研究生论文模板 (https://github.com/zoam/swu-thesis-grd)
-%% 修改者: DouBao, Zhang Lin
+%% 修改者: Zhang Lin
 %% 版本号: 1.0
 %% 更新日期: 2025年11月26日
 %%==============================================================================
@@ -284,8 +284,8 @@
 
 		% 作者与导师信息
 		\begin{tabular}{@{}l@{}}
-			{\fontspec{Times New Roman} \zihao{-3} Author Name: \swu@value@author} \\
-			{\fontspec{Times New Roman} \zihao{-3} Supervisor: \swu@value@advisor}
+			{\fontspec{Times New Roman} \zihao{-3} Author Name: \swu@value@enauthor} \\
+			{\fontspec{Times New Roman} \zihao{-3} Supervisor: \swu@value@enadvisor}
 		\end{tabular}\vspace{-5pt}
 
 		\vskip 250pt
