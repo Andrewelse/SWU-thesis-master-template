@@ -5,8 +5,9 @@
 %%   2. D5.硕士学位论文封面格式.doc
 %% 基底项目: 厦门大学硕士研究生论文模板 (https://github.com/zoam/swu-thesis-grd)
 %% 修改者: Zhang Lin
-%% 版本号: 1.1
-%% 更新日期: 2025年12月15日 %%=============================================================================
+%% 版本号: 1.3
+%% 更新日期: 20251217
+%%=============================================================================
 
 % 默认单面打印 oneside 、硕士论文模板 master
 
@@ -102,9 +103,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter
 
+% 导入文章的第一章, 一般是引言部分, 包括研究背景, 国内外研究现状, 本文的主要工作, 预备知识等.
 \input{chapters/chapter1}
-%\include{chapters/chapter2}
-%\include{chapters/chapter3}
+
+% 其中一个类型的文章
+\include{chapters/chapter2}
+
+% 另一篇文章
+\include{chapters/chapter3}
 
 % \adjustafterskip %调整章节与正文的间距。临时解决方案。总结、参考文献、附录、致谢和发表的论文都会受到影响。
 \input{chapters/conclusion}

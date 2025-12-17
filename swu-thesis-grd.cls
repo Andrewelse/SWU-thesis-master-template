@@ -7,8 +7,8 @@
 %%   2. D5.硕士学位论文封面格式.doc
 %% 基底项目: 厦门大学硕士研究生论文模板 (https://github.com/zoam/swu-thesis-grd)
 %% 修改者: Zhang Lin
-%% 版本号: 1.0
-%% 更新日期: 2025年11月26日
+%% 版本号: 1.3
+%% 更新日期: 2025年12月17日
 %%==============================================================================
 
 %%==============================================================================
@@ -763,8 +763,8 @@ headheight = 13pt % 修正页眉高度警告
 }
 
 % 目录深度
-\setcounter{secnumdepth}{1}
-\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{3}  % 编号深度限制为 3 级
+\setcounter{tocdepth}{1}     % 目录显示深度限制为 1 级（仅 chapter 和 section 显示在目录）
 
 %%--- 11.3 英文目录辅助命令 ---
 \newcommand\enchapter[1]{\addtocontents{etoc}
